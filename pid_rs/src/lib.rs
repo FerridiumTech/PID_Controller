@@ -1,4 +1,5 @@
 #![no_std]
+#![no_main]
 
 use embassy_time::{Instant, Timer, Duration};
 //use num_traits::float::FloatCore;
