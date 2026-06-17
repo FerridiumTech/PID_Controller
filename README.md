@@ -1,9 +1,9 @@
 ## PID_rs
 
-What is this?! A no_std PID controller implementation in Rust for embedded systems.
+What is this?! A `#![no_std]` PID controller implementation in Rust for embedded systems.
 STILL UNDER DEVELOPMENT
 
-This crate implements a full-featured, small-footprint PID controller that runs in a `#![no_std]` environment. It provides:
+This implements a full-featured, small-footprint PID controller that runs in a `#![no_std]` & `#![no_main]` environment. It provides:
 
 - Setpoint weighting for proportional and derivative actions
 - Bumpless transfer when changing gains
@@ -191,16 +191,10 @@ There are unit tests in `src/lib.rs` that exercise setpoint weighting behaviour 
 ```bash
 cargo test -v
 ```
-## Known issues
-`cargo build` is successful but `cargo test --verbose` fails with: `Linking with cc failed!` Too lazy to start poking at linker errors for now...
 
 ## Contribution
+1. Fork the repository and improve it
 
-Contributions are welcome:
-
-1. Fork the repository and create a feature branch.
-2. Add tests for new behaviours or bug fixes.
-3. Open a pull request describing the change, motivation, and any compatibility considerations.
 
 I will really appreciate
 
